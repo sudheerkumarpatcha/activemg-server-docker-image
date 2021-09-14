@@ -1,0 +1,17 @@
+This tests main designed to verify the activemq-server(jms bocker) remotely available as docker container.
+
+Send plain text message input
+
+GET request:
+http://localhost:9001/activemqservice/textmessage/this is tes tmessage
+
+Send Student as object to activemq-service:
+
+POST request:
+http://localhost:9001/activemqservice/objectmessage
+input: 
+{
+    "studentName":"Sudheerkumar",
+    "studentAddress": "HYD",
+    "studentId": 101
+} 
